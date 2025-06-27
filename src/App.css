@@ -1,6 +1,9 @@
 .App {
   text-align: center;
 }
+body{
+  background-color: #000 !important;
+}
 
 .App-logo {
   height: 40vmin;
@@ -71,6 +74,8 @@
   padding: .375rem;
   border-radius: .375rem;
   color: grey;
+  background-color: transparent;
+  margin-right: 10px;
 }
 .filter-btn:hover{
   background-color: grey;
@@ -94,5 +99,27 @@ a.btn-success {
   margin-inline: 10px;
 }
 .title-div .form-control {
-  width: 25% !important;
+  width: 40% !important;
+}
+.pt-100{
+  padding-top: 100px;
+}
+.ml-10{
+  margin-left: 10px;
+}
+.stats-input{
+  display: flex;
+  justify-content: space-between;
+}
+.task-add-title{
+  width: 50%;
+}
+.task-stats{
+  width: 50%;
+}
+.stats-input strong{
+  font-size: 36px;
+}
+.stats-input h3{
+  padding-top: 30px;
 }
