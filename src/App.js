@@ -30,9 +30,9 @@ function App() {
       setTitle('');
       setShowInput(false);
     }
-  };
+  };  
 
-  // Load tasks from localStorage on mount
+  
   useEffect(() => {
     const storedTasks = localStorage.getItem('tasks');
     if (storedTasks) {
@@ -165,7 +165,7 @@ function App() {
       </div>
 
       <div className="row pt-100 ">
-        {/* Pending Tasks */}
+       
         <div className="col-md-4">
           <h4 className="text-white text-center">Pending</h4>
           {pendingTasks.map(task => (
@@ -192,7 +192,7 @@ function App() {
           ))}
         </div>
 
-        {/* In Progress Tasks */}
+       
         <div className="col-md-4">
           <h4 className="text-white text-center">In Progress</h4>
           {inProgressTasks.map(task => (
@@ -222,7 +222,7 @@ function App() {
           ))}
         </div>
 
-        {/* Completed Tasks */}
+      
         <div className="col-md-4">
           <h4 className="text-white text-center">Completed</h4>
           {completedTasks.map(task => (
